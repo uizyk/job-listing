@@ -3,9 +3,43 @@
     padding: 0;
 }
 
+body{
+    background-color: hsl(180, 52%, 96%);
+}
+
 header{
     background-image: url('images/bg-header-desktop.svg');
     height: 16vh;
     width: 100vw;
     background-color:hsl(180, 29%, 50%);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card{
+    display: flex;
+    width: 768px;
+    background-color: white;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card img{
+    width: auto;
+}
+
+.card-center{
+    margin-right: auto;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

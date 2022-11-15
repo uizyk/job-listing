@@ -25,22 +25,24 @@ req.onload = function(){
 
             card += `
             
-                <div>
+                <div class="card">
                     <img src="${data[i].logo}"/>
-                    <div>
+                    <div class="card-center">
                         <p>${data[i].company}</p>    
+                        <h3>${data[i].position}</h3>
+                        <p>${data[i].postedAt} • ${data[i].contract} • ${data[i].location}</p>
                     </div>
-                    <h3>${data[i].position}</h3>
-                    <p>${data[i].postedAt} • ${data[i].contract} • ${data[i].location}</p>
-                    <hr />
                     <div>
-                        <h3>${data[i].role} ${data[i].level} ${data[i].languages.join(' ')} </h3>
+                    <button>${data[i].role} </button>
+                    <button>${data[i].level} </button>
+                    <button>${data[i].languages}</button>
                     </div>
                 </div>
                 <br/>
 
             `
-        }
+            }
+        
 
         let section = document.querySelector('section');
         section.innerHTML = card;
