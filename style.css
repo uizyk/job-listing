@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: url('images/bg-header-desktop.svg');
+    height: 16vh;
+    width: 100vw;
+    background-color:hsl(180, 29%, 50%);
+}
