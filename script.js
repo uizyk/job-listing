@@ -18,10 +18,11 @@ req.onload = function(){
         let card = document.createElement('div');
         card = "";
         for(let i=0; i<data.length; i++){
-            
-            // if(data[i].new === true){
-            //     let isNew = 'NEW!'
-            // } else { isNew = ''}
+
+
+            if(data[i].languages.length > 0){
+                let isNew = 'NEW!'
+            } else { isNew = ''}
 
             card += `
             
