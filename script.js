@@ -51,7 +51,13 @@ req.onload = function(){
 
         let section = document.querySelector('section');
         section.innerHTML = card;
-        
     }
 }
 
+
+function search(e){
+    let searchContainer = document.createElement('div');
+    search.innerHTML = `<p>${e.target.textContent}</p> `
+    card.appendChild(searchContainer)
+
+}
